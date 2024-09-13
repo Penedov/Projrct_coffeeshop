@@ -1,0 +1,102 @@
+/*Declarando variaveis para uso continuo durante o CSS*/
+:root {
+    --main-coloor: #d3ad71;
+    --black: #13131a;
+    --bg: #100103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    --font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+/*Ajustes gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+body {
+    background-color: var(--bg);
+}
+/*estilização do logo*/
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    /*Nivel de prioridade e tela*/
+    border-bottom: var(--border);
+}
+/*seção do logo*/
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.navbar a:hover {
+    color: var(--main-coloor);
+    border-bottom: 0.1rem solid var(--main-coloor);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+.icons img:hover {
+    width: 60px;
+    height: 60px;
+}
+/*Botão de "pegue o seu"*/
+.btn {
+    background: var(--main-coloor);
+    color: #ffff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+/*Fundo da div entre header e section*/
+.home-conteiner {
+    background: url("./image/home-img.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.home-conteiner section {
+    display: flex;
+    align-items: center;
+}
+/*Atribuindo formatação a section*/
+.content {
+    max-width: 60rem;
+}
+.content h3 {
+    color: #ffff;
+    font-size: 6rem;
+}
+.content p {
+    color: #ffff;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
